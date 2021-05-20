@@ -4,6 +4,8 @@
   "description": "A set of UI components for React, using @headlessui/react and tailwindcss with following 'COLLECTED' style guides.",
   "author": "Kay Kim",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/collectedui.esm.js",
   "license": "MIT",
   "files": [
     "README.md",
@@ -20,7 +22,9 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "next dev"
+    "playground": "next dev",
+    "playground:build": "next build",
+    "build": "./scripts/build.sh"
   },
   "peerDependencies": {
     "react": ">=16",
@@ -39,6 +43,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "tailwindcss": "^2.1.2",
+    "tsdx": "^0.14.1",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4"
   }
